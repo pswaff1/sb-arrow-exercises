@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SB-Arrow-Exercises</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Springboard Arrow Functions Exercises</h1>
+    <div id="questions">
+        <div id="q1">
+            <h2>Exercise 1</h2>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <p>Refactor the following ES5 Map Callback function to instead
+                    use two arrow functions:</p>
+                <div class="code_snippet">
+                    function double(arr) {<br>
+                    &emsp;return arr.map(function (val) {<br>
+                    &emsp;&emsp;return val * 2;
+                    &emsp;});<br>
+                    }
+                </div>
+            </div>
+            <div class="solution">
+                <h3>Solution</h3>
+                <div class="code_snippet">
+                    const double = (arr) => arr.map((val) => val * 2);
+                </div>
+            </div>
+        </div>
+        <div id="q2">
+            <h2>Exercise 2</h2>
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <p>Refactor the following ES5 function to use only arrow functions:</p>
+                <div class="code_snippet">
+                    function squareAndFindEvens(numbers) {<br>
+                    &emsp;var squares = numbers.map(function(num) {<br>
+                    &emsp;&emsp;return num ** 2;<br>
+                    &emsp;});<br>
+                    &emsp;var evens = squares.filter(function(square) {<br>
+                    &emsp;&emsp;return square % 2 === 0;<br>
+                    &emsp;});<br>
+                    &emsp;return evens;<br>
+                    }
+                </div>
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <div class="code_snippet">
+                        const squareAndFindEvens = (numbers) => numbers.map((num) => num ** 2).filter(square => square %
+                        2 === 0);
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
